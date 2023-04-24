@@ -5,7 +5,7 @@
 Summary:	Kdav
 Name:		ka5-%{kaname}
 Version:	19.04.1
-Release:	2
+Release:	3
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/applications/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
@@ -79,6 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
+%dir %{_includedir}/KPim
 %{_includedir}/KPim/KDAV
 %{_includedir}/KPim/kdav
 %{_includedir}/KPim/kpimkdav_version.h
